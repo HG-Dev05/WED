@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="styleLog.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <h2 >ĐĂNG NHẬP <span class="img"> </h2>
+        </div>
+        <div class="login-box">
+            <p class="note">Mỗi người dùng chỉ sử dụng 01 tài khoản, nếu bạn chia sẻ, tài khoản có thể bị khóa mà không thông báo trước.</p>
+            <form>
+                <div class="options1">
+                    <label >Tài khoản</label>
+                    <input type="text" id="username" placeholder="Email / Số điện thoại" required>
+                </div>
+                
+                <div class="options1">
+                    <label>Mật khẩu</label>
+                    <input type="password" id="password" placeholder="" required>
+                </div>
+                
+                <div class="options2">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Nhớ tài khoản</label>
+                    <label href="#" class="forgot-password">Quên mật khẩu?</label>
+                </div>
+                
+                <button type="submit" class="login-btn">Đăng nhập</button>
+            </form>
+            
+            <div class="google-login">
+                <p>Hoặc đăng nhập bằng:</p>
+                <p><img src="image/gg.jpg" width="20" height="20"></img> Đăng nhập bằng Google</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
