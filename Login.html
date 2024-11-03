@@ -9,13 +9,13 @@
 <body>
     <div class="login-container">
         <div class="login-header">
-            <h2 >ĐĂNG NHẬP <span class="img"> </h2>
+            <h2>ĐĂNG NHẬP <span class="img"></span></h2>
         </div>
         <div class="login-box">
             <p class="note">Mỗi người dùng chỉ sử dụng 01 tài khoản, nếu bạn chia sẻ, tài khoản có thể bị khóa mà không thông báo trước.</p>
-            <form>
+            <form onsubmit="return CheckThongTin();">
                 <div class="options1">
-                    <label >Tài khoản</label>
+                    <label>Tài khoản</label>
                     <input type="text" id="username" placeholder="Email / Số điện thoại" required>
                 </div>
                 
@@ -27,7 +27,7 @@
                 <div class="options2">
                     <input type="checkbox" id="remember">
                     <label for="remember">Nhớ tài khoản</label>
-                    <label href="#" class="forgot-password">Quên mật khẩu?</label>
+                    <a href="#" class="forgot-password" style="color: #333;">Quên mật khẩu?</a>
                 </div>
                 
                 <button type="submit" class="login-btn">Đăng nhập</button>
@@ -35,9 +35,10 @@
             
             <div class="google-login">
                 <p>Hoặc đăng nhập bằng:</p>
-                <p><img src="image/gg.jpg" width="20" height="20"></img> Đăng nhập bằng Google</p>
+                <p><img src="image/gg.jpg" width="20" height="20"> Đăng nhập bằng Google</p>
             </div>
         </div>
     </div>
+    <script src="srclogin.js"></script>
 </body>
 </html>
