@@ -11,13 +11,13 @@
 <div class="container">
     <div class="login">
         <h2>ĐĂNG KÝ</h2>
-        <form >
+        <form onsubmit="return CheckThongTin();">
             <label>Tài khoản</label>
-            <input type="text" id="phone" placeholder="Số điện thoại" required>
+            <input type="text" id="username" placeholder="Email / Số điện thoại" required>
             <label>Mật khẩu</label>
-            <input type="password" placeholder="password" required>
-            <label>Nhập lại mật khẩu</label>
             <input type="password" id="password" placeholder="password" required>
+            <label>Nhập lại mật khẩu</label>
+            <input type="password" id="confirm password" placeholder="password" required>
             
             <div class="login-options">
                 <div>
@@ -40,6 +40,7 @@
         </p>
     </div>
 </div>
+<script src="srcregis.js"></script>
 
 </body>
 </html>
