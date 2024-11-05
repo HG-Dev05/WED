@@ -687,6 +687,59 @@ footer {
     text-decoration: underline;
 }
 
+.dropup {
+    position: relative;
+    display: inline-block;
+}
+
+.dropup-content {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 270px;
+    background-color: black;
+    color: #fff;
+    padding: 10px 10px; /* Thu nhỏ khoảng cách bên trong khung */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-bottom: 3px;
+    font-size: 14px; /* Kích thước chữ */
+    min-width: auto;
+    text-align: left;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+}
+
+.dropup-content a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 2px 5px; /* Thu nhỏ khoảng cách giữa các dòng */
+    margin: 0; /* Loại bỏ khoảng cách ngoài */
+    text-decoration: none;
+}
+
+.dropup-content a:hover {
+    text-decoration: none;
+    color: #e6e600;
+}
+
+.dropup:hover .dropup-content {
+    display: block;
+}
+
+/* Tạo mũi tên */
+.dropup-arrow {
+    position: absolute;
+    bottom: -5px;
+    left: 100px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+}
+
 hr.divider {
     border: none;
     border-top: 1px solid rgba(255, 255, 255, 0.3); 
